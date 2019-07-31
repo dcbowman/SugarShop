@@ -1,8 +1,21 @@
- <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="..." alt="Card image cap">
+ 
+ <app-filter-menu (changed)="filter($event)"></app-filter-menu>
+
+ <div class="card" style="width: 18rem;" *ngFor="let product of filteredProducts">
+        <img class="card-img-top" src="{{product.image}}" alt="Image">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+          <p>{{product.product_category}}</p>
+          <h5 class="card-title">{{product.product_name}}</h5> 
+          <p>{{product.price | currency}}</p>
+          <a href="#" class="btn btn-primary">Add To Cart</a>
         </div>
 </div>
+
+
+<!--   product_id: number;
+    product_name: string;
+    product_category: string;
+    image: string;
+    price: number;
+    color: string;
+    description: string; -->

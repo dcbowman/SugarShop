@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { IProduct } from '../shared/interfaces';
+
 @Component({
   selector: 'app-products',
   templateUrl: './products.component.html',
@@ -7,13 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductsComponent implements OnInit {
   title: string;
-  products: any[];
+  items: IProduct[];
 
   constructor() { }
 
   ngOnInit() {
     this.title= 'Our Products';
-    this.products = [
+    this.items = [
       {
       product_id: 1,
       product_name: "Men's Silk Tie",

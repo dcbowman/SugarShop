@@ -1,19 +1,21 @@
 
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 
 
 import { ProductsComponent } from './products.component';
 import { ProductsListComponent } from './products-list/products-list.component';
-
+import { FilterMenuComponent} from './products-list/filter-menu.component';
 
 @NgModule({
   declarations: [
     ProductsComponent,
-    ProductsListComponent
+    ProductsListComponent,
+    FilterMenuComponent
   ],
   imports: [
-    CommonModule
+    CommonModule, FormsModule
   ],
   exports: [
       ProductsComponent
