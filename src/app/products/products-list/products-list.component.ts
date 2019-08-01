@@ -2,6 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 
 
 import { IProduct } from '../../shared/interfaces'; 
+import { SorterService } from '../../core/sorter.service';
 
 @Component({
   selector: 'app-products-list',
@@ -23,7 +24,7 @@ export class ProductsListComponent implements OnInit {
   filteredProducts: any[] = []; 
   cartTotal: number;
 
-  constructor() { }
+  constructor(private sorterService: SorterService) { }
 
   ngOnInit() {
    
@@ -43,7 +44,7 @@ export class ProductsListComponent implements OnInit {
 
   
   sort(prop: string){
-    //sorter service
+   this.sorterService.sort(this.filteredProducts, prop);
   }
 
 }
