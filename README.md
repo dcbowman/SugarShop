@@ -4,7 +4,7 @@ The page of purchase options is populated through a http call. You have the abil
 
 Still to come is filtering by price and the ability to add, remove or increase quantity of the shopping cart.
 
-##Production
+## Production
 
 https://sugar-shop.herokuapp.com/
 
@@ -14,6 +14,6 @@ Run `npm install` to retrieve needed node modules
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-##Built With
+## Built With
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.4.
