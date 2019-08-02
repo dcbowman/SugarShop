@@ -11,7 +11,6 @@ import { IProduct } from '../shared/interfaces';
 })
 export class DetailComponent implements OnInit {
 
-  detail: IProduct[] = [];
   product: IProduct;
 
   constructor( private dataService: DataService,

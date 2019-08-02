@@ -7,12 +7,12 @@
             <h5>{{product.product_name}}</h5>
         </div>
         <div class="row">
-                <p>{{product.product_description}}</p>
+                <p>{{product.description}}</p>
         </div>
         <div class="row">
+                <span>{{product.product_category}}</span>
                <span>{{product.color}}</span>
-               <span>{{product.price}}</span>
-              <span>{{product.product_category}}</span>
+               <span>{{product.price | currency}}</span>
         </div>
     </div>
 </div>

@@ -9,6 +9,7 @@ import { ProductsListComponent } from './products-list/products-list.component';
 import { FilterMenuComponent } from './products-list/filter-menu.component';
 import { ProductsRoutingModule } from './products-routing.module';
 
+
 @NgModule({
   declarations: [
     ProductsComponent,
