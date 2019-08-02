@@ -8,10 +8,12 @@ import { ProductsModule } from './products/products.module';
 
 import { SharedModule } from './shared/shared.module';
 import { DetailModule } from './detail/detail.module';
+import { CheckoutComponent } from './checkout/checkout.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CheckoutComponent
   ],
   imports: [
     BrowserModule,

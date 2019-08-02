@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 import { IProduct } from '../shared/interfaces';
+
 
 @Component({
   selector: 'app-checkout',
@@ -9,10 +11,13 @@ import { IProduct } from '../shared/interfaces';
 })
 export class CheckoutComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+
+  ) { }
 
   ngOnInit() {
-    
+  
+  
   }
 
 }
