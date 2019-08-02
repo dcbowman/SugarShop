@@ -9,11 +9,14 @@ import { ProductsModule } from './products/products.module';
 import { SharedModule } from './shared/shared.module';
 import { DetailModule } from './detail/detail.module';
 import { CheckoutComponent } from './checkout/checkout.component';
+import { HeaderComponent } from './components/header/header.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    CheckoutComponent
+    CheckoutComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

@@ -11,6 +11,7 @@ import { IProduct } from '../shared/interfaces';
 })
 export class DetailComponent implements OnInit {
 
+  
   product: IProduct;
 
   constructor( private dataService: DataService,

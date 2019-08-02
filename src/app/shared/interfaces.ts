@@ -7,11 +7,3 @@ export interface IProduct {
     color: string;
     description: string;
 }
-
-// export interface ICart {
-//     orderNumber: string;
-//     orderItems: IProduct[];
-//     orderTotal?: number;
-//     customerName: string;
-
-// }   

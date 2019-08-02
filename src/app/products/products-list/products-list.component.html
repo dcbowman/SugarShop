@@ -1,9 +1,7 @@
- 
-<app-filter-menu (changed)="filter($event)"></app-filter-menu>
-
-<div class= "row">
-  <button class="btn" (click)="sort('product_name')">Name</button>
-  <button class="btn" (click)="sort('product_category')">Category</button>
+ <div class= "row">
+  <app-filter-menu (changed)="filter($event)"></app-filter-menu>
+  <button type="button" class="btn" (click)="sort('product_name')">Sort by Name</button>
+  <button type="button" class="btn" (click)="sort('product_category')">Sort by Category</button>
 </div>
 
 <div class= "row">
@@ -13,8 +11,8 @@
           <p>{{product.product_category}}</p>
           <h5 class="card-title">{{product.product_name}}</h5>
           <p>{{product.price | currency}}</p>
-          <a href="#" class="btn btn-primary">Add To Cart</a>
-          <a [routerLink]="['/detail', product.product_id]" class="btn btn-primary">Detail</a>
+          <a href="#" class="btn">Add To Cart</a>
+          <a [routerLink]="['/detail', product.product_id]" class="btn">Detail</a>
         </div>
   </div>
 </div>
