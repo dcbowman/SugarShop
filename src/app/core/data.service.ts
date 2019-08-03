@@ -8,7 +8,7 @@ import { IProduct } from '../../app/shared/interfaces';
 
 @Injectable()
 export class DataService {
-    baseUrl: string = 'https://my.api.mockaroo.com/product_catalog.json?key=866ae800';
+    baseUrl: string = 'https://cors-anywhere.herokuapp.com/https://my.api.mockaroo.com/product_catalog.json?key=866ae800';
 
     constructor(private http: HttpClient) { }
 
