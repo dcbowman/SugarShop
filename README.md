@@ -6,7 +6,7 @@ Still to come is filtering by price and the ability to add, remove or increase q
 
 ## Production
 
-https://sugar-shop.herokuapp.com/
+https://sugar-shop-95a3f.firebaseapp.com/products
 
 ## To Run on Local
 
