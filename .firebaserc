@@ -1,0 +1,21 @@
+{
+  "targets": {
+    "engaged-yen-131814": {
+      "hosting": {
+        "SugarShop": [
+          "engaged-yen-131814"
+        ]
+      }
+    },
+    "sugar-shop-95a3f": {
+      "hosting": {
+        "SugarShop": [
+          "sugar-shop-95a3f"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "prod": "sugar-shop-95a3f"
+  }
+}
